@@ -41,7 +41,7 @@ In this phase, we build different models to predict whether a client will subscr
 ### Compared the models : 
 * Logistic Regression
 * K Nearest Neighbors
-* Decision Trees
+* Decision Tree Classifier
 * Support Vector Classifier (SVC)
 
 ### Model Training
@@ -53,20 +53,20 @@ Evaluated models using accuracy score on test and train data
 # 5. Evaluation
 ### Comparison of Models:
 Best tuned values for models : 
-* Logistic Regression - 
-* K Nearest Neighbors - 
-* Decision Trees - 
-* Support Vector Classifier (SVC) -
+* Logistic Regression - C=1, max_iter=1000
+* K Nearest Neighbors - n_neighbors=7
+* Decision Tree Classifier - max_depth=5
+* Support Vector Classifier (SVC) - C=1
 
 ### Test accuracy:
-* Logistic Regression - 
-* K Nearest Neighbors - 
-* Decision Trees - 
-* Support Vector Classifier (SVC) -
+* Logistic Regression - 0.916363
+* K Nearest Neighbors - 0.899854
+* Decision Tree Classifier - 0.918548
+* Support Vector Classifier (SVC) - 0.913571
   
 ### Observation : 
 
-Support Vector Classifier was found to have the best performance
+Decision Tree Classifier was found to have the best performance, and also completes processing in moderate time. 
 
 ### Key Insights / Business recommendations : 
 * Positive Influencers:
