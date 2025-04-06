@@ -65,9 +65,11 @@ Best tuned values for models :
 * K Nearest Neighbors - 0.899854
 * Decision Tree Classifier - 0.918548
 * Support Vector Classifier (SVC) - 0.913571
+
+### Interpretation of Coefficients: 
+Logistic Regression coefficients were analyzed to interpret feature impacts
   
 ### Observation : 
-
 Decision Tree Classifier was found to have the best performance, and also completes processing in moderate time. 
 
 ### Key Insights / Business recommendations : 
