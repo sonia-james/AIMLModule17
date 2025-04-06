@@ -1,4 +1,4 @@
-# 1.Business Understanding
+# 1. Business Understanding
 Objective: The goal of this project is to predict whether a customer will subscribe to a term deposit based on various features, such as the client's personal information, contact details, and campaign characteristics. The data is related to phone calls made during a direct marketing campaign by a Portuguese banking institution.
 
 ### Business Problem:
@@ -6,11 +6,10 @@ Objective: The goal of this project is to predict whether a customer will subscr
 The bank wants to increase the efficiency of its marketing campaigns. By predicting whether a client will subscribe to a term deposit based on past interactions and client information, the bank can focus resources on high-potential leads, improving conversion rates and minimizing marketing costs.
 Goal: Build a predictive model that can classify whether a customer will subscribe to a term deposit (the target variable y). The model should aim to accurately predict this binary outcome.
 
-# 2.Data Understanding
+# 2. Data Understanding
 Data Collection: The dataset contains information about various factors like the client’s demographic details, campaign contact history, economic indicators, and campaign outcomes.
 
-Features:
-
+### Features:
 Job: Type of job (e.g., 'admin.', 'blue-collar', 'technician', etc.)
 Marital: Marital status (e.g., 'single', 'married', 'divorced')
 Education: Level of education (e.g., 'high.school', 'university.degree')
@@ -35,3 +34,49 @@ Convert categorical features (e.g., 'job', 'marital', 'education') into numeric 
 Scale numerical features such as duration, campaign, pdays, etc., using techniques like Standard Scaling
 ### Splitting Data:
 Split the data into training and testing sets using train_test_split. Ensure stratified splitting so that the distribution of the target variable (y) is maintained across both sets.
+
+In this phase, we build different models to predict whether a client will subscribe to a term deposit.
+
+# 4. Model Selection
+### Compared the models : 
+* Logistic Regression
+* K Nearest Neighbors
+* Decision Trees
+* Support Vector Classifier (SVC)
+
+### Model Training
+Trained the model  on the training data and tuned hyperparameters using  Grid Search to find the best-performing model.
+
+### Model Evaluation:
+Evaluated models using accuracy score on test and train data
+
+# 5. Evaluation
+### Comparison of Models:
+Best tuned values for models : 
+* Logistic Regression - 
+* K Nearest Neighbors - 
+* Decision Trees - 
+* Support Vector Classifier (SVC) -
+
+### Test accuracy:
+* Logistic Regression - 
+* K Nearest Neighbors - 
+* Decision Trees - 
+* Support Vector Classifier (SVC) -
+  
+### Observation : 
+
+Support Vector Classifier was found to have the best performance
+
+### Key Insights / Business recommendations : 
+* Positive Influencers:
+  Variables such as duration, cons.price.idx, euribor3m, contact_cellular, and poutcome_success have a positive relationship with the dependent variable, suggesting that these factors increase the likelihood of success.
+* Negative Influencers: Features like emp.var.rate, month_may, pdays, contact_telephone, and default_yes have a negative relationship with the dependent variable, implying that these factors are associated with a lower likelihood of success.
+* Employment variation rate increases, the probability of the positive outcome decreases
+* Increase in the consumer price index leads to an Increase subscription
+* The duration has a strong positive effect, meaning the longer the duration of contact, the more likely it is that the outcome will be positive
+* The number of employees is positively correlated with the outcome.
+* Months August,March increases the likelihood of positive outcome
+* The month May is negatively correlated with the outcome.
+* The number of days since the last contact (pdays) negatively influences the outcome
+* The default_yes feature, indicating whether the client has credit in default, negatively impacts the outcome.
