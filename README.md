@@ -1,3 +1,4 @@
+Jupiter Notebook : https://github.com/sonia-james/AIMLModule17/blob/main/Bank_Subscription_Analysis.ipynb
 # 1. Business Understanding
 Objective: The goal of this project is to predict whether a customer will subscribe to a term deposit based on various features, such as the client's personal information, contact details, and campaign characteristics. The data is related to phone calls made during a direct marketing campaign by a Portuguese banking institution.
 
